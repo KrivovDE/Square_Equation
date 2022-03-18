@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FINISH</title>
+  </head>
+  <style>
+       body {background: bisque;}
+  </style>
+  <body>
+   	<div class="container">
+        <h1>Тестовые задания Python-программисту</h1>
+    </div>
+
+    <div class="container">
+        <h3>
+        Напишите сервис, который будет находить корни квадратного уравнения вида <h1>ax<sup><small>2</small></sup>  + bx + c = 0</h1>
+        <h3>Самостоятельно определите наиболее оптимальную структуру возвращаемых данных. <br>
+        В качестве входных данных в сервис передаются значения a, b, c.
+        </h3></h3>
+    </div>
+
+    <h4>Указанное значение a =  {{ a }}</h4>
+    <h4>Указанное значение b =  {{ b }}</h4>
+    <h4>Указанное значение c =  {{ c }}</h4> <br>
+    <h4>Дискримант D =  {{ D }}</h4>
+    <h4>ОТВЕТ:  {{ x1 }} {{ x2 }}  {{ x3 }} {{ x4 }} </h4>
+
+  <form action="{% url 'start' %}">
+       <input type="submit" value="Вернуться"><br><br>
+   </form>
+
+
+
+
+
+  </body>
+</html>
+
+
+
+
+

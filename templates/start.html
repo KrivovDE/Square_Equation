@@ -1,29 +1,12 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>START</title>
-  </head>
-  <style>
-       body {background: bisque;}
-  </style>
-  <body>
-   	<div class="container">
-        <h1>Тестовые задания Python-программисту</h1>
-    </div>
-    <form action="{% url '                  ' %}">
-       <input type="text" name="a" placeholder="Введите значение а">
-       <input type="text" name="b" placeholder="Введите значение b">
-       <input type="text" name="c" placeholder="Введите значение c">
-       <input type="reset" name="" value="Очистить"><br><br>
-       <input type="submit" value="Узнать ответ"><br><br>
-    </form>
-
-  </body>
-</html>
-
-
-
-
+{% extends "base.html" %}
+{% block title %} START {% endblock %}
+{% block content %}
+<form action="{% url 'finish' %}">
+    <input type="number" name="a" required="" step="0.0001" placeholder="Введите значение а">
+    <input type="number" name="b" required="" step="0.0001" placeholder="Введите значение b">
+    <input type="number" name="c" required="" step="0.0001" placeholder="Введите значение c">
+    <input type="reset" name="" value="Очистить"><br><br>
+    <input type="submit" value="Узнать ответ"><br><br>
+</form>
+{% endblock %}
 

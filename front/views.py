@@ -8,7 +8,7 @@ def start(request):
 
 
 def finish(request):
-    """Преобразуем днные полученные от пользователя в переенные питона"""
+    """Преобразуем данные, полученные от пользователя, в переенные питона"""
     a = float(request.GET.get('a'))
     b = float(request.GET.get('b'))
     c = float(request.GET.get('c'))
@@ -31,4 +31,3 @@ def finish(request):
         else:
             x4 = 'Уравнение не имеет решений'
             return render(request, 'finish.html', {'a': a, 'b': b, 'c': c, 'D': D, 'x4': x4})
-
